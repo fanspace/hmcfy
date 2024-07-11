@@ -1,3 +1,14 @@
+#harmonyos
+*/oh_modules/
+.idea/
+oh_modules/
+.hvigor/cache/
+.hvigor/report/
+.hvigor/outputs/
+*/.preview/
+*.protoBin
+
+
 # Logs
 logs
 *.log
