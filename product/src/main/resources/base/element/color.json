@@ -1,8 +1,20 @@
 {
   "color": [
     {
+      "name": "page_background",
+      "value": "#f1f3f5"
+    },
+    {
       "name": "start_window_background",
       "value": "#FFFFFF"
+    },
+    {
+      "name": "forty_alpha_black",
+      "value": "#66000000"
+    },
+    {
+      "name": "focus_color",
+      "value": "#e92f4f"
     }
   ]
 }

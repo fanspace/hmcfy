@@ -1,6 +1,10 @@
 {
   "string": [
     {
+      "name": "splash_desc",
+      "value": "Qingdao Talent Development Group"
+    },
+    {
       "name": "module_desc",
       "value": "module description"
     },
@@ -11,6 +15,22 @@
     {
       "name": "ProductAbility_label",
       "value": "label"
+    },
+    {
+      "name": "home_tab",
+      "value": "home"
+    },
+    {
+      "name": "app_tab",
+      "value": "apps"
+    },
+    {
+      "name": "msg_tab",
+      "value": "msgs"
+    },
+    {
+      "name": "my_tab",
+      "value": "my"
     }
   ]
 }

@@ -1,6 +1,10 @@
 {
   "string": [
     {
+      "name": "splash_desc",
+      "value": "青岛人才发展集团"
+    },
+    {
       "name": "module_desc",
       "value": "模块描述"
     },
@@ -11,6 +15,22 @@
     {
       "name": "ProductAbility_label",
       "value": "label"
+    },
+    {
+      "name": "home_tab",
+      "value": "首页"
+    },
+    {
+      "name": "app_tab",
+      "value": "应用"
+    },
+    {
+      "name": "msg_tab",
+      "value": "消息"
+    },
+    {
+      "name": "my_tab",
+      "value": "我的"
     }
   ]
 }
