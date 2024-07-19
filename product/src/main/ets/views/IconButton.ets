@@ -44,7 +44,9 @@ export struct IconButton {
         .fontSize($r('app.float.vp_fourteen'))
         .fontColor(Color.White)
         .fontWeight(800)
-        .margin({ top: $r('app.float.vp_twelve') })
+        .margin({
+          top: $r('app.float.vp_twelve')
+        })
     }
     .height($r('app.float.vp_fifty_six'))
     .onClick(() => {
