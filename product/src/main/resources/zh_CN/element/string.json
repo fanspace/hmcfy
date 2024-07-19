@@ -31,6 +31,18 @@
     {
       "name": "my_tab",
       "value": "我的"
+    },
+    {
+      "name": "text_msg",
+      "value": "消息"
+    },
+    {
+      "name": "text_todo",
+      "value": "待办"
+    },
+    {
+      "name": "text_notice",
+      "value": "通知"
     }
   ]
 }

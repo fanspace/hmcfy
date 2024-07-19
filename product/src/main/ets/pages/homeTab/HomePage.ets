@@ -1,4 +1,7 @@
 import { LocalDataManager, StyleConstants, BreakpointConstants } from '@ohos/common';
+import {IconButtonModel} from '../../viewmodel/IconButtonModel';
+import { sysButton } from '../../viewmodel/btnData';
+import {IconButton} from '../../views/IconButton';
 @Component
 export struct HomePage {
 
@@ -23,6 +26,24 @@ export struct HomePage {
     .width(StyleConstants.FULL_WIDTH)
     .padding({ top: $r('app.float.vp_twelve'), bottom: $r('app.float.vp_twelve') })
   }
+
+  @Builder
+  IconSysDock(buttons: IconButtonModel[]) {
+    Flex({
+      justifyContent: FlexAlign.SpaceAround,
+      alignItems: ItemAlign.Center
+    }) {
+      ForEach(buttons, (iconButton: IconButtonModel) => {
+        IconButton({
+          props: iconButton
+        })
+      }, (iconButton: IconButtonModel[]) => JSON.stringify(iconButton))
+    }
+    .height($r('app.float.icon_dock_height'))
+    .padding($r('app.float.vp_twelve'))
+  }
+
+
   build() {
     Stack({ alignContent: Alignment.Top }) {
       Image($r('app.media.cfy_bg'))
@@ -33,7 +54,8 @@ export struct HomePage {
         this.SearchTitle()
         Scroll() {
           Column() {
-
+            Row().height($r('app.float.icon_dock_height'))
+            this.IconSysDock(sysButton)
           }
           }
         .scrollBar(BarState.Off)

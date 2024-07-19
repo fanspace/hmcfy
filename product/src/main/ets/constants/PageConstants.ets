@@ -118,4 +118,8 @@ export class PageConstants {
    * Key of router get params: id.
    */
   static readonly ID_KEY: string = 'id';
+  /**
+   * Size of badge.
+   */
+  static readonly BADGE_SIZE: number = 16;
 }
