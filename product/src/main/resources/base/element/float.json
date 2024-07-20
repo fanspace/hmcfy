@@ -151,6 +151,10 @@
     {
       "name": "home_grid_height",
       "value": "158vp"
+    },
+    {
+      "name": "home_news_header_height",
+      "value": "30vp"
     }
 
   ]

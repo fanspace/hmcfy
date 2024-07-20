@@ -4,7 +4,8 @@ import { sysButton, getHomeGridBtnData } from '../../viewmodel/btnData';
 import {IconButton} from '../../views/IconButton';
 @Component
 export struct HomePage {
-
+  @StorageProp('currentBreakpoint') currentBreakpoint: string = 'sm';
+  @State  newsIdx:number = 0;
   @Builder
   SearchTitle() {
     Column() {
@@ -114,6 +115,35 @@ export struct HomePage {
   }
 
 
+  @Builder
+  NewsHeader(){
+    Flex({
+      justifyContent: FlexAlign.SpaceBetween,
+      alignItems: ItemAlign.Center
+    }) {
+      Row(){
+        if(this.newsIdx == 0) {
+          Text($r('app.string.text_group_news')).fontSize($r('app.float.vp_sixteen')).fontWeight(800).fontColor($r('app.color.news_btn_focus'))
+          Text($r('app.string.text_group_policy')).fontSize($r('app.float.vp_fourteen')).fontWeight(500).fontColor($r('app.color.news_btn_blue')).margin({left:$r('app.float.vp_ten')})
+        } else {
+          Text($r('app.string.text_group_news')).fontSize($r('app.float.vp_fourteen')).fontWeight(500).fontColor($r('app.color.news_btn_blue'))
+          Text($r('app.string.text_group_policy')).fontSize($r('app.float.vp_sixteen')).fontWeight(800).fontColor($r('app.color.news_btn_focus')).margin({left:$r('app.float.vp_ten')})
+        }
+      }
+      Button($r('app.string.text_more'),{type: ButtonType.Capsule}).fontSize($r('app.float.vp_twelve')).height($r('app.float.vp_sixteen')).width($r('app.float.empty_image_size')).backgroundColor(Color.Gray)
+    }.height($r('app.float.home_news_header_height'))
+    .width(StyleConstants.FULL_WIDTH)
+  }
+  @Builder
+  NewsComp(){
+    Column(){
+      this.NewsHeader()
+    }.backgroundColor(Color.White)
+    .margin({top: $r('app.float.vp_twelve') })
+    .padding($r('app.float.vp_twelve'))
+
+  }
+
   build() {
     Stack({ alignContent: Alignment.Top }) {
       Image($r('app.media.cfy_bg'))
@@ -144,6 +174,8 @@ export struct HomePage {
             .height($r('app.float.icon_dock_height'))
             .margin({top:$r('app.float.vp_twelve')})
             // -------- end data
+
+            this.NewsComp()
           }
           }
         .scrollBar(BarState.Off)

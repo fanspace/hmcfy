@@ -79,6 +79,14 @@
     {
       "name": "text_more",
       "value": "更多"
+    },
+    {
+      "name": "text_group_news",
+      "value": "集团要闻"
+    },
+    {
+      "name": "text_group_policy",
+      "value": "集团制度"
     }
   ]
 }

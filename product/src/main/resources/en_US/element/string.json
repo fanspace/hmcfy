@@ -79,6 +79,14 @@
     {
       "name": "text_more",
       "value": "more"
+    },
+    {
+      "name": "text_group_news",
+      "value": "Group Top News"
+    },
+    {
+      "name": "text_group_policy",
+      "value": "Group Policies"
     }
   ]
 }
