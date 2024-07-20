@@ -15,6 +15,10 @@
     {
       "name": "focus_color",
       "value": "#e92f4f"
+    },
+    {
+      "name": "mydata_bar",
+      "value": "#333333"
     }
   ]
 }

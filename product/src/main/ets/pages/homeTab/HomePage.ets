@@ -71,6 +71,48 @@ export struct HomePage {
 
   }
 
+  @Builder
+  MyData(txt:string, lef:string, type:string) {
+    Flex({ direction: FlexDirection.Column }) {
+      Row() {
+        Text(txt)
+          .fontSize($r('app.float.smaller_font_size'))
+        Image($r('app.media.ic_right_arrow'))
+          .objectFit(ImageFit.Contain)
+          .height($r('app.float.vp_twelve'))
+          .width($r('app.float.vp_twelve'))
+      }
+      .alignSelf(ItemAlign.End)
+      .margin({ bottom: $r('app.float.vp_fourteen') })
+
+      Row() {
+        Text(lef)
+        if(type == 'h'){
+          Text('天').fontSize($r('app.float.vp_twelve'))
+        } else {
+
+        }
+
+      }
+      .alignSelf(ItemAlign.Center)
+
+    }
+    .height('100vp')
+    .padding({top: $r('app.float.vp_twenty_four')})
+    .margin($r('app.float.vp_twelve'))
+
+  }
+
+  @Builder
+  MyDataBar(){
+    Column()
+      .width($r('app.float.vp_one'))
+      .backgroundColor($r('app.color.page_background'))
+      .height($r('app.float.vp_thirty_six'))
+      .margin({top:$r('app.float.vp_six'), bottom:$r('app.float.vp_six')})
+
+  }
+
 
   build() {
     Stack({ alignContent: Alignment.Top }) {
@@ -85,6 +127,23 @@ export struct HomePage {
             Row().height($r('app.float.icon_dock_height'))
             this.IconSysDock(sysButton)
             this.BiLineButtons()
+            // ------ start data
+            Flex({
+              alignItems: ItemAlign.Center,
+              justifyContent: FlexAlign.SpaceAround,
+              direction: FlexDirection.Row
+            }){
+              this.MyData('年假', '12.5', 'h')
+              this.MyDataBar()
+              this.MyData('调休', '2.0', 'h')
+              this.MyDataBar()
+              this.MyData('上班', '8:30', 'w')
+              this.MyDataBar()
+              this.MyData('下班', '', 'w')
+            }.backgroundColor(Color.White)
+            .height($r('app.float.icon_dock_height'))
+            .margin({top:$r('app.float.vp_twelve')})
+            // -------- end data
           }
           }
         .scrollBar(BarState.Off)
