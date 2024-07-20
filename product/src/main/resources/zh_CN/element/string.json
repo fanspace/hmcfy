@@ -43,6 +43,42 @@
     {
       "name": "text_notice",
       "value": "通知"
+    },
+    {
+      "name": "text_attendance",
+      "value": "考勤打卡"
+    },
+    {
+      "name": "text_new_flow",
+      "value": "新建流程"
+    },
+    {
+      "name": "text_my_flow",
+      "value": "我发起的"
+    },
+    {
+      "name": "text_schedule",
+      "value": "日程"
+    },
+    {
+      "name": "text_done_flow",
+      "value": "已办流程"
+    },
+    {
+      "name": "text_undo_flow",
+      "value": "待办流程"
+    },
+    {
+      "name": "text_outing_record",
+      "value": "外勤打卡"
+    },
+    {
+      "name": "text_conference",
+      "value": "会议"
+    },
+    {
+      "name": "text_more",
+      "value": "更多"
     }
   ]
 }

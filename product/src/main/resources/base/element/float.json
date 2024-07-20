@@ -85,6 +85,10 @@
       "value": "24vp"
     },
     {
+      "name": "vp_thirty_six",
+      "value": "36vp"
+    },
+    {
       "name": "vp_fifty_six",
       "value": "56vp"
     },
@@ -143,6 +147,10 @@
     {
       "name": "icon_dock_height",
       "value": "94vp"
+    },
+    {
+      "name": "home_grid_height",
+      "value": "158vp"
     }
 
   ]

@@ -43,6 +43,42 @@
     {
       "name": "text_notice",
       "value": "notice"
+    },
+    {
+      "name": "text_attendance",
+      "value": "attendance"
+    },
+    {
+      "name": "text_new_flow",
+      "value": "new flow"
+    },
+    {
+      "name": "text_my_flow",
+      "value": "my flow"
+    },
+    {
+      "name": "text_schedule",
+      "value": "schedule"
+    },
+    {
+      "name": "text_done_flow",
+      "value": "done flow"
+    },
+    {
+      "name": "text_undo_flow",
+      "value": "undo flow"
+    },
+    {
+      "name": "text_outing_record",
+      "value": "outing record"
+    },
+    {
+      "name": "text_conference",
+      "value": "conference"
+    },
+    {
+      "name": "text_more",
+      "value": "more"
     }
   ]
 }
