@@ -134,10 +134,64 @@ export struct HomePage {
     }.height($r('app.float.home_news_header_height'))
     .width(StyleConstants.FULL_WIDTH)
   }
+
+
+  @Builder
+  NewsBody(){
+    Column(){
+      Row(){
+        Column(){
+          Text('06/07').fontSize('18vp').fontWeight(800).fontColor('#999999')
+          Text('2024').fontColor('#999999').margin({top:'10vp'})
+        }.width('80vp')
+        Column(){
+          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontWeight(800)
+          Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
+        }.width('240vp')
+        .align(Alignment.Start)
+
+      }.width('100%')
+      .height('80vp')
+      Divider()
+        .width(StyleConstants.FULL_WIDTH)
+        .height($r('app.float.vp_one'))
+        .backgroundColor($r("app.color.five_alpha_black"))
+        .margin({
+          top: $r('app.float.vp_eight')
+        })
+
+      Row(){
+        Column(){
+          Text('06/07').fontSize('18vp').fontWeight(800).fontColor('#999999')
+          Text('2024').fontColor('#999999').margin({top:'10vp'})
+        }.width('80vp')
+        Column(){
+          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontWeight(800)
+          Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
+        }.width('240vp')
+        .align(Alignment.Start)
+
+      }.width('100%')
+      .height('80vp')
+
+      Divider()
+        .width(StyleConstants.FULL_WIDTH)
+        .height($r('app.float.vp_one'))
+        .backgroundColor($r("app.color.five_alpha_black"))
+        .margin({
+          top: $r('app.float.vp_eight')
+        })
+
+
+    }.padding({right:'10vp'})
+  }
+
+
   @Builder
   NewsComp(){
     Column(){
       this.NewsHeader()
+      this.NewsBody()
     }.backgroundColor(Color.White)
     .margin({top: $r('app.float.vp_twelve') })
     .padding($r('app.float.vp_twelve'))

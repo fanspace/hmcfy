@@ -27,6 +27,10 @@
     {
       "name": "news_btn_blue",
       "value": "#999999"
+    },
+    {
+      "name": "five_alpha_black",
+      "value": "#0d000000"
     }
   ]
 }
