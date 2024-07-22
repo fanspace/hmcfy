@@ -99,6 +99,10 @@
     {
       "name": "text_search_app",
       "value": "Search Applications"
+    },
+    {
+      "name": "text_group",
+      "value": "Group"
     }
   ]
 }

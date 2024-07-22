@@ -99,6 +99,10 @@
     {
       "name": "text_cc",
       "value": "cc"
+    },
+    {
+      "name": "text_group",
+      "value": "Group"
     }
   ]
 }

@@ -99,6 +99,10 @@
     {
       "name": "text_cc",
       "value": "抄送事宜"
+    },
+    {
+      "name": "text_group",
+      "value": "群组"
     }
   ]
 }

@@ -6,6 +6,7 @@ import uiEffect from '@ohos.graphics.uiEffect';
 
 @Component
 export struct AppPage {
+  @StorageProp('currentBreakpoint') currentBreakpoint: string = 'md';
   getdynamicRows = (btn:IconButtonModel[]) => {
     const rows =  Math.ceil(btn.length / 4);
     const tmp = new Array(rows).fill('1fr').join(' ');
@@ -69,8 +70,6 @@ export struct AppPage {
     }
   @Builder
   adapters(title:string, buttons: IconButtonModel[]) {
-
-
       GridRow({ columns: 3, gutter: 1 }) {
         ForEach(buttons, (item: IconButtonModel) => {
           GridCol() {
