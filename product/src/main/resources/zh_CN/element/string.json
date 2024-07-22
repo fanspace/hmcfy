@@ -87,6 +87,18 @@
     {
       "name": "text_group_policy",
       "value": "集团制度"
+    },
+    {
+      "name": "text_search_app",
+      "value": "搜索应用"
+    },
+    {
+      "name": "text_email",
+      "value": "我的邮件"
+    },
+    {
+      "name": "text_cc",
+      "value": "抄送事宜"
     }
   ]
 }

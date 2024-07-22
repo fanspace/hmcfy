@@ -155,6 +155,10 @@
     {
       "name": "home_news_header_height",
       "value": "30vp"
+    },
+    {
+      "name": "search_swiper_height",
+      "value": "40vp"
     }
 
   ]

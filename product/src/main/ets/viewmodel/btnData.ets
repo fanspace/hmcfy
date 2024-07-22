@@ -21,7 +21,9 @@ export const app2:IconButtonModel[] = [
   new IconButtonModel($r('app.media.done_flow'), $r('app.string.text_done_flow')),
   new IconButtonModel($r('app.media.undo_flow'), $r('app.string.text_undo_flow')),
   new IconButtonModel($r('app.media.outing_record'), $r('app.string.text_outing_record')),
-  new IconButtonModel($r('app.media.more'), $r('app.string.text_more')),
+  new IconButtonModel($r('app.media.email'), $r('app.string.text_email')),
+  new IconButtonModel($r('app.media.conference'), $r('app.string.text_conference')),
+  new IconButtonModel($r('app.media.cc'), $r('app.string.text_cc')),
 
 ];
 

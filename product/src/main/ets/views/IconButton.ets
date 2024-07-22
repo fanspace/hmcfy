@@ -32,17 +32,19 @@ export struct IconButton {
           Image(this.props.icon)
             .width($r('app.float.icon_size'))
             .height($r('app.float.icon_size'))
+
         }
         .width($r('app.float.icon_size'))
         .height($r('app.float.icon_size'))
       } else {
         Image(this.props.icon)
+          .opacity(0.8)
           .width($r('app.float.icon_size'))
           .height($r('app.float.icon_size'))
       }
       Text(this.props.text)
         .fontSize($r('app.float.vp_fourteen'))
-        .fontColor(Color.White)
+        .fontColor('#ccc')
         .fontWeight(800)
         .margin({
           top: $r('app.float.vp_twelve')

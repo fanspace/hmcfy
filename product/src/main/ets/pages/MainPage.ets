@@ -20,7 +20,6 @@ struct MainPage {
   //private localDataManager: LocalDataManager = LocalDataManager.instance();
   aboutToAppear() {
     this.breakpointSystem.register();
-
   }
   aboutToDisappear() {
     this.breakpointSystem.unregister();

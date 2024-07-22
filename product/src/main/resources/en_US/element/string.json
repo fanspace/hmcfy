@@ -87,6 +87,18 @@
     {
       "name": "text_group_policy",
       "value": "Group Policies"
+    },
+    {
+      "name": "text_search_app",
+      "value": "Search Applications"
+    },
+    {
+      "name": "text_email",
+      "value": "my email"
+    },
+    {
+      "name": "text_cc",
+      "value": "cc"
     }
   ]
 }

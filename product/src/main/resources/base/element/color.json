@@ -21,6 +21,10 @@
       "value": "#333333"
     },
     {
+      "name": "search_app",
+      "value": "#666666"
+    },
+    {
       "name": "news_btn_focus",
       "value": "#333333"
     },

@@ -77,17 +77,17 @@ export struct HomePage {
     Flex({ direction: FlexDirection.Column }) {
       Row() {
         Text(txt)
-          .fontSize($r('app.float.smaller_font_size'))
+          .fontSize($r('app.float.micro_font_size'))
         Image($r('app.media.ic_right_arrow'))
           .objectFit(ImageFit.Contain)
-          .height($r('app.float.vp_twelve'))
-          .width($r('app.float.vp_twelve'))
+          .height($r('app.float.vp_ten'))
+          .width($r('app.float.vp_ten'))
       }
       .alignSelf(ItemAlign.End)
       .margin({ bottom: $r('app.float.vp_fourteen') })
 
       Row() {
-        Text(lef)
+        Text(lef).fontColor('#666666').fontWeight(700)
         if(type == 'h'){
           Text('天').fontSize($r('app.float.vp_twelve'))
         } else {
@@ -130,7 +130,7 @@ export struct HomePage {
           Text($r('app.string.text_group_policy')).fontSize($r('app.float.vp_sixteen')).fontWeight(800).fontColor($r('app.color.news_btn_focus')).margin({left:$r('app.float.vp_ten')})
         }
       }
-      Button($r('app.string.text_more'),{type: ButtonType.Capsule}).fontSize($r('app.float.vp_twelve')).height($r('app.float.vp_sixteen')).width($r('app.float.empty_image_size')).backgroundColor(Color.Gray)
+      Button($r('app.string.text_more'),{type: ButtonType.Capsule}).fontSize($r('app.float.vp_ten')).height($r('app.float.vp_sixteen')).width($r('app.float.empty_image_size')).backgroundColor(Color.Gray)
     }.height($r('app.float.home_news_header_height'))
     .width(StyleConstants.FULL_WIDTH)
   }
@@ -142,14 +142,12 @@ export struct HomePage {
       Row(){
         Column(){
           Text('06/07').fontSize('18vp').fontWeight(800).fontColor('#999999')
-          Text('2024').fontColor('#999999').margin({top:'10vp'})
+          Text('2024').fontSize('14vp').fontColor('#999999').margin({top:'10vp'})
         }.width('80vp')
         Column(){
-          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontWeight(800)
+          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontColor('#555555').fontWeight(800)
           Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
         }.width('240vp')
-        .align(Alignment.Start)
-
       }.width('100%')
       .height('80vp')
       Divider()
@@ -163,10 +161,10 @@ export struct HomePage {
       Row(){
         Column(){
           Text('06/07').fontSize('18vp').fontWeight(800).fontColor('#999999')
-          Text('2024').fontColor('#999999').margin({top:'10vp'})
+          Text('2024').fontSize('14vp').fontColor('#999999').margin({top:'10vp'})
         }.width('80vp')
         Column(){
-          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontWeight(800)
+          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontColor('#555555').fontWeight(800)
           Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
         }.width('240vp')
         .align(Alignment.Start)
@@ -185,7 +183,6 @@ export struct HomePage {
 
     }.padding({right:'10vp'})
   }
-
 
   @Builder
   NewsComp(){
@@ -217,13 +214,13 @@ export struct HomePage {
               justifyContent: FlexAlign.SpaceAround,
               direction: FlexDirection.Row
             }){
-              this.MyData('年假', '12.5', 'h')
+              this.MyData('年假剩余', '12.5', 'h')
               this.MyDataBar()
-              this.MyData('调休', '2.0', 'h')
+              this.MyData('调休剩余', '2.0', 'h')
               this.MyDataBar()
-              this.MyData('上班', '8:30', 'w')
+              this.MyData('上班打卡', '8:30', 'w')
               this.MyDataBar()
-              this.MyData('下班', '', 'w')
+              this.MyData('下班打卡', '', 'w')
             }.backgroundColor(Color.White)
             .height($r('app.float.icon_dock_height'))
             .margin({top:$r('app.float.vp_twelve')})
