@@ -76,10 +76,7 @@ export struct AppPage {
           GridCol() {
             Column() {
               Image(item.icon)
-                .visualEffect(uiEffect.createEffect({
-                type: uiEffect.EffectType.GRAYSCALE,
-                value: 1.0,
-              })).size({ width: 35, height: 35 })
+                .size({ width: 35, height: 35 })
               Text(item.text).fontSize(12).fontColor(Color.Black).margin({ top: 5 })
             }
             .justifyContent(FlexAlign.Center)
