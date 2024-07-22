@@ -2,6 +2,8 @@ import { LocalDataManager, StyleConstants, BreakpointConstants } from '@ohos/com
 import {IconButtonModel} from '../../viewmodel/IconButtonModel';
 import { app1, app2 } from '../../viewmodel/btnData';
 import { SearchTitle } from '../../views/SearchTitle';
+import uiEffect from '@ohos.graphics.uiEffect';
+
 @Component
 export struct AppPage {
   getdynamicRows = (btn:IconButtonModel[]) => {
@@ -16,8 +18,8 @@ export struct AppPage {
 
   @Builder
   BiLineButtons(title:string ,buttons: IconButtonModel[]){
-    Column(){
-      Text(title).fontSize('14vp').height('26vp').width('100%').backgroundColor(Color.White).padding({left:'12vp', top:'8vp'})
+   // Column(){
+     // Text(title).fontSize('14vp').height('30vp').width('100%').backgroundColor(Color.White).padding({left:'12vp', top:'8vp'}).textAlign(TextAlign.Center)
       Grid() {
         ForEach(buttons, (item: IconButtonModel) => {
           GridItem() {
@@ -40,8 +42,8 @@ export struct AppPage {
       .height(this.getdynamicHeight(buttons))
       .width(StyleConstants.FULL_WIDTH)
       .backgroundColor(Color.White)
-
-    }.margin({top:'5vp'})
+      .margin({top:'5vp'})
+    //}
 
 
 
@@ -65,7 +67,71 @@ export struct AppPage {
       .backgroundColor('#eeeeee')
 
     }
+  @Builder
+  adapters(title:string, buttons: IconButtonModel[]) {
 
+
+      GridRow({ columns: 3, gutter: 1 }) {
+        ForEach(buttons, (item: IconButtonModel) => {
+          GridCol() {
+            Column() {
+              Image(item.icon)
+                .visualEffect(uiEffect.createEffect({
+                type: uiEffect.EffectType.GRAYSCALE,
+                value: 1.0,
+              })).size({ width: 35, height: 35 })
+              Text(item.text).fontSize(12).fontColor(Color.Black).margin({ top: 5 })
+            }
+            .justifyContent(FlexAlign.Center)
+            .backgroundColor(Color.White)
+            .aspectRatio(1.4)
+            .width('100%')
+            .onClick(e => {
+              /*
+            switch (item.id) {
+              case 0: {
+                break
+              }
+              case 1: {
+                break
+              }
+              case 2: {
+                break
+              }
+              case 3: {
+                break
+              }
+              case 4: {
+                break
+              }
+              case 6: {
+                break
+              }
+              case 8: {
+                break
+              }
+              case 9: {
+                break
+              }
+              case 11: {
+                break
+              }
+
+              case 5:
+              case 7:
+              case 10:
+              case 12:
+              case 13:
+                goWebView(item.url)
+                break
+            }
+            */
+            })
+          }
+        })
+
+    }
+  }
     build() {
       Stack({ alignContent: Alignment.Top }) {
         Image($r('app.media.cfy_bg'))
@@ -79,14 +145,16 @@ export struct AppPage {
             this.SearchComp()
           }.
           alignSelf(ItemAlign.Center)
-          .margin({top: '128vp'})
-          Row().height('16vp')
+          .margin({top: '122vp'})
+
         Scroll() {
         Column() {
+          Text('常用应用').fontSize('14vp').height('30vp').width('100%').textAlign(TextAlign.Center).backgroundColor($r('app.color.page_background')).margin({top:'30vp', bottom:'10vp'}).padding({top:'10vp'})
           this.BiLineButtons('常用应用', app1)
           Row().height('6vp')
-          this.BiLineButtons('协同办公', app2)
-
+          //this.BiLineButtons('协同办公', app2)
+          Text('协同办公').fontSize('14vp').margin({top:'10vp', bottom:'10vp'})
+          this.adapters('协同办公', app2)
         }
       }
       .scrollBar(BarState.Off)
@@ -94,4 +162,6 @@ export struct AppPage {
     }
       }
   }
+
+
 }

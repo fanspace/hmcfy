@@ -2,10 +2,12 @@ import { LocalDataManager, StyleConstants, BreakpointConstants } from '@ohos/com
 import {IconButtonModel} from '../../viewmodel/IconButtonModel';
 import { sysButton, getHomeGridBtnData } from '../../viewmodel/btnData';
 import {IconButton} from '../../views/IconButton';
+import { SearchTitle } from '../../views/SearchTitle';
 @Component
 export struct HomePage {
   @StorageProp('currentBreakpoint') currentBreakpoint: string = 'sm';
   @State  newsIdx:number = 0;
+  /*
   @Builder
   SearchTitle() {
     Column() {
@@ -27,7 +29,7 @@ export struct HomePage {
     .width(StyleConstants.FULL_WIDTH)
     .padding($r('app.float.vp_twelve'))
   }
-
+*/
   @Builder
   IconSysDock(buttons: IconButtonModel[]) {
     Flex({
@@ -202,7 +204,7 @@ export struct HomePage {
         .height($r('app.float.image_background_height'))
         .objectFit(ImageFit.Auto)
       Flex({ direction: FlexDirection.Column }) {
-        this.SearchTitle()
+        SearchTitle()
         Scroll() {
           Column() {
             Row().height($r('app.float.icon_dock_height'))
