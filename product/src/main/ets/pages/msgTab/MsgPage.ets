@@ -36,7 +36,7 @@ export struct MsgPage {
           Text('消息').fontSize('12vp').fontColor('#666666').margin({top:'3vp'})
         }.width('80vp')
         Column(){
-          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontColor('#333333').fontWeight(800)
+          Text('包揽天下英才，引进高层次人才”常态化路演明白纸').fontSize('14vp').fontColor('#333333').fontWeight(800)
           Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
         }.width('240vp')
       }.width('100%')
@@ -55,7 +55,7 @@ export struct MsgPage {
           Text('待办').fontSize('12vp').fontColor('#666666').margin({top:'3vp'})
         }.width('80vp')
         Column(){
-          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontColor('#333333').fontWeight(800)
+          Text('包揽天下英才，引进高层次人才”常态化路演明白纸').fontSize('14vp').fontColor('#333333').fontWeight(800)
           Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
         }.width('240vp')
         .align(Alignment.Start)
@@ -76,7 +76,7 @@ export struct MsgPage {
           Text('群组').fontSize('12vp').fontColor('#666666').margin({top:'3vp'})
         }.width('80vp')
         Column(){
-          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontColor('#333333').fontWeight(800)
+          Text('包揽天下英才，引进高层次人才”常态化路演明白纸').fontSize('14vp').fontColor('#333333').fontWeight(800)
           Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
         }.width('240vp')
         .align(Alignment.Start)

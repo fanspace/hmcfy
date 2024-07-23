@@ -43,7 +43,7 @@ TopBoard(){
       Image($r('app.media.unit'))
         .height('24vp')
         .aspectRatio(1)
-      Text('青岛市人才发展集团 / 测试部门').fontSize('12vp').fontWeight(600).letterSpacing('2vp').padding({left:'6vp'})
+      Text('中国测试发展集团 / 测试部门').fontSize('12vp').fontWeight(600).letterSpacing('2vp').padding({left:'6vp'})
 
     }.height('40vp')
     .width('100%')

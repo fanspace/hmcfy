@@ -147,8 +147,8 @@ export struct HomePage {
           Text('2024').fontSize('14vp').fontColor('#999999').margin({top:'10vp'})
         }.width('80vp')
         Column(){
-          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontColor('#555555').fontWeight(800)
-          Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
+          Text('包揽天下英才，引进高层次人才”常态化路演明白纸').fontSize('14vp').fontColor('#555555').fontWeight(800)
+          Text('为持续优化我市金融人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
         }.width('240vp')
       }.width('100%')
       .height('80vp')
@@ -166,7 +166,7 @@ export struct HomePage {
           Text('2024').fontSize('14vp').fontColor('#999999').margin({top:'10vp'})
         }.width('80vp')
         Column(){
-          Text('唯才唯青岛·惠才赋能|“青岛菁英人才”常态化路演明白纸').fontSize('14vp').fontColor('#555555').fontWeight(800)
+          Text('包揽天下英才，引进高层次人才”常态化路演明白纸').fontSize('14vp').fontColor('#555555').fontWeight(800)
           Text('为持续优化我市金融赋胞人才发展生布...').fontSize('12vp').fontColor('#999999').margin({top:'6vp'})
         }.width('240vp')
         .align(Alignment.Start)
