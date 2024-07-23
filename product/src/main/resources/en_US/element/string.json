@@ -103,6 +103,26 @@
     {
       "name": "text_group",
       "value": "Group"
+    },
+    {
+      "name": "text_personal",
+      "value": "Personal Docs"
+    },
+    {
+      "name": "text_reset_pwd",
+      "value": "Reset Password"
+    },
+    {
+      "name": "text_change_acc",
+      "value": "Change Account"
+    },
+    {
+      "name": "text_manage_dev",
+      "value": "Manage Device"
+    },
+    {
+      "name": "text_about_us",
+      "value": "About Us"
     }
   ]
 }

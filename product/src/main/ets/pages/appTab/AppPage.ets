@@ -19,9 +19,7 @@ export struct AppPage {
 
   @Builder
   BiLineButtons(title:string ,buttons: IconButtonModel[]){
-   // Column(){
-     // Text(title).fontSize('14vp').height('30vp').width('100%').backgroundColor(Color.White).padding({left:'12vp', top:'8vp'}).textAlign(TextAlign.Center)
-      Grid() {
+     Grid() {
         ForEach(buttons, (item: IconButtonModel) => {
           GridItem() {
             Column() {
@@ -44,10 +42,6 @@ export struct AppPage {
       .width(StyleConstants.FULL_WIDTH)
       .backgroundColor(Color.White)
       .margin({top:'5vp'})
-    //}
-
-
-
   }
   @Builder
   SearchComp() {

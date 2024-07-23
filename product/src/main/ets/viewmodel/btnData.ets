@@ -7,6 +7,26 @@ export const sysButton: IconButtonModel[] = [
 ]
 
 
+export const myButton: IconButtonModel[] = [
+  new IconButtonModel($r('app.media.personal_docs'), $r('app.string.text_personal')),
+  new IconButtonModel($r('app.media.oa_todo'), $r('app.string.text_todo')),
+
+]
+
+export const mySettingButton: IconButtonModel[] = [
+  new IconButtonModel($r('app.media.my_pwd'), $r('app.string.text_reset_pwd')),
+  new IconButtonModel($r('app.media.my_dev'), $r('app.string.text_manage_dev')),
+  new IconButtonModel($r('app.media.my_acc'), $r('app.string.text_change_acc')),
+
+]
+
+
+export const myAboutButton: IconButtonModel[] = [
+  new IconButtonModel($r('app.media.aboutus'), $r('app.string.text_about_us')),
+
+
+]
+
 
 export  const app1:IconButtonModel[] = [
   new IconButtonModel($r('app.media.attendance'), $r('app.string.text_attendance')),

@@ -103,6 +103,26 @@
     {
       "name": "text_group",
       "value": "群组"
+    },
+    {
+      "name": "text_personal",
+      "value": "个人资料"
+    },
+    {
+      "name": "text_reset_pwd",
+      "value": "重置密码"
+    },
+    {
+      "name": "text_change_acc",
+      "value": "更改账号"
+    },
+    {
+      "name": "text_manage_dev",
+      "value": "管理设备"
+    },
+    {
+      "name": "text_about_us",
+      "value": "关于我们"
     }
   ]
 }
